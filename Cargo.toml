@@ -6,4 +6,8 @@ edition = "2021"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
+# this puts apalis-cron, apalis-redis & apalis-sql into the lockfile
 apalis = { version = "0.4.6", default-features = false, features = ["chrono", "tokio-comp"] }
+
+[dev-dependencies]
+dlopen_derive = "0.1"  # intentionally an unmaintained crate
